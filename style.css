@@ -1,0 +1,186 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 3rem auto;
+    background-color: var(--light-gray);
+    font-family: 'Karla', sans-serif;
+    padding: 1.5rem;
+}
+
+.intro {
+    background-color: white;
+    padding: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px 4px 0 0;
+}
+
+.recruit {
+    color: var(--cyan);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hassle {
+    color: var(--bright-yellow);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.info {
+    color: var(--grayish-blue);
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.subscription {
+    background-color: var(--cyan);
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.monthly {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 1rem;
+}
+
+.per {
+    color: hsl(0, 0%, 100%, .5);
+}
+
+.access {
+    color: hsl(0, 0%, 100%, .8);
+    margin-bottom: 2.5rem;
+}
+
+.signup-btn {
+    background-color: var(--bright-yellow);
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 16px 10px 0px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: hsl(71, 73%, 54%, .8);
+}
+
+.signup-btn:active {
+    transform: translateX(3px);
+}
+
+.footer {
+    background-color: hsla(179, 62%, 43%, 0.707);
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 0 4px 4px;
+}
+
+.why {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: hsl(0, 0%, 100%, .7);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.end li {
+    margin-bottom: .3rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1026px) {
+
+    body {
+        padding: 20rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .intro {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        max-width: 1200px;
+        padding: 2.5rem 2rem;
+        width: 100%;
+    }
+
+    .info {
+        width: 85%;
+    }
+
+    .hassle {
+        color: var(--bright-yellow);
+        margin-bottom: .5rem;
+        font-weight: 700;
+    }
+
+    .subscription {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .footer {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        max-width: 1200px;
+        width: 100%;
+    }
+}
