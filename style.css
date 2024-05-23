@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     background-color: var(--light-gray);
     font-family: 'Karla', sans-serif;
     padding: 1.5rem;
@@ -41,6 +41,7 @@ body {
     color: var(--bright-yellow);
     margin-bottom: 1.5rem;
     font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .info {
@@ -138,6 +139,7 @@ ul {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: underline;
 }
 
 @media (min-width: 1026px) {
